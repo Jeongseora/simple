@@ -1,5 +1,6 @@
 <html>
 <body>
+<h1>과연 인식할 수 있을까?</h1>
 <h1>JBoss EAP Test Page!!</h1>
 <h2><a href="jvm_options.jsp">JVM Options Page</a></h2>
 <h2><a href="failover.jsp">Session Test Page</a></h2>
