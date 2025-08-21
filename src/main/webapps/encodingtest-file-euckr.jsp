@@ -4,12 +4,12 @@
 <%@ page import="java.io.*" %>
 
 <!-- 
-Encoding È®ÀÎ¹æ¹ý
-1. ½ÇÇà¿É¼Ç¿¡ -Dfile.encoding=euc-kr ¶Ç´Â utf-8 Ãß°¡
-2. FileOutputStream »ý¼º½Ã ÀÎÄÚµù ÁöÁ¤
-2. jspÆÄÀÏÀÇ ÀÎÄÚµùÀ» »ý¼ºÇÒ ÆÄÀÏÀÇ ÀÎÄÚµùÀ¸·Î ¸ÂÃá´Ù.
-3. »ý¼ºµÈ ÆÄÀÏ È®ÀÎ ½Ã ½©¿¡¼­ LANG¼³Á¤À» ¸ÂÃß¾î º¯°æÇÑ´Ù. (LANG=ko_KR.euckr ¶Ç´Â LANG=ko_KR.utf8)
-4. ÅÍ¹Ì³Î ÀÎÄÚµùÀ» ¸ÂÃá´Ù.
+Encoding í™•ì¸ë°©ë²•
+1. ì‹¤í–‰ì˜µì…˜ì— -Dfile.encoding=euc-kr ë˜ëŠ” utf-8 ì¶”ê°€
+2. FileOutputStream ìƒì„±ì‹œ ì¸ì½”ë”© ì§€ì •
+2. jspíŒŒì¼ì˜ ì¸ì½”ë”©ì„ ìƒì„±í•  íŒŒì¼ì˜ ì¸ì½”ë”©ìœ¼ë¡œ ë§žì¶˜ë‹¤.
+3. ìƒì„±ëœ íŒŒì¼ í™•ì¸ ì‹œ ì‰˜ì—ì„œ LANGì„¤ì •ì„ ë§žì¶”ì–´ ë³€ê²½í•œë‹¤. (LANG=ko_KR.euckr ë˜ëŠ” LANG=ko_KR.utf8)
+4. í„°ë¯¸ë„ ì¸ì½”ë”©ì„ ë§žì¶˜ë‹¤.
  -->
 
 <%
@@ -32,7 +32,7 @@ Encoding È®ÀÎ¹æ¹ý
 				Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileDir), "EUC_KR"));
 				//Writer writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileDir)));
 				
-				writer.append("ÇÑ±Û------------------------").append("\r\n");
+				writer.append("í•œê¸€------------------------").append("\r\n");
 				writer.append(word).append("\r\n");
 				writer.append("iso-8859-1 => euc-kr : ").append(new String(word.getBytes("iso-8859-1"), "euc-kr")).append("\r\n");
 				writer.append("iso-8859-1 => utf-8 : ").append(new String(word.getBytes("iso-8859-1"), "utf-8")).append("\r\n");
@@ -80,7 +80,7 @@ Encoding È®ÀÎ¹æ¹ý
 <form name="encoding">
 <table border="1" cellspacing="0" width="500">
   <tr>
-    <th width="10%">±¸ºÐ</th><th width="25%">ÀÔ·Â°ª</th>
+    <th width="10%">êµ¬ë¶„</th><th width="25%">ìž…ë ¥ê°’</th>
   </tr>
   <tr>
       <td>Input Data</td>
@@ -100,14 +100,14 @@ Encoding È®ÀÎ¹æ¹ý
 <br>
 <%
     if ( first.equals("NULL")) {
-	  	out.println("ÀÔ·Â°ª : " + first);
+	  	out.println("ìž…ë ¥ê°’ : " + first);
     } else {
-        out.println("ÀÔ·Â°ª : " + first);
+        out.println("ìž…ë ¥ê°’ : " + first);
         out.println("<br><br>");
 %>
     	<table border="1" cellspacing="0" width="800">
     	  <tr>
-    	    <th width="10%">±¸ºÐ</th><th width="25%">°á°ú°ª</th>
+    	    <th width="10%">êµ¬ë¶„</th><th width="25%">ê²°ê³¼ê°’</th>
     	  </tr>
     	  <tr>
     	      <td>File</td>
