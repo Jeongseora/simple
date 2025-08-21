@@ -48,7 +48,7 @@
 <form name="encoding">
 <table border="1" cellspacing="0" width="500">
   <tr>
-    <th width="10%">±¸ºÐ</th><th width="25%">ÀÔ·Â°ª</th>
+    <th width="10%">êµ¬ë¶„</th><th width="25%">ìž…ë ¥ê°’</th>
   </tr>
   <tr>
       <td>Input Data</td>
@@ -69,15 +69,15 @@
 <%
     if ( first.equals("NULL"))
     {
-	  out.println("ÀÔ·Â°ª : " + first);
+	  out.println("ìž…ë ¥ê°’ : " + first);
     } else 
     {
-        out.println("ÀÔ·Â°ª : " + first);
+        out.println("ìž…ë ¥ê°’ : " + first);
         out.println("<br><br>");
 %>
     	<table border="1" cellspacing="0" width="800">
     	  <tr>
-    	    <th width="10%">±¸ºÐ</th><th width="25%">°á°ú°ª</th>
+    	    <th width="10%">êµ¬ë¶„</th><th width="25%">ê²°ê³¼ê°’</th>
     	  </tr>
     	  <tr>
     	      <td>Default</td>
