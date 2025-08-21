@@ -11,6 +11,7 @@
     <packaging>war</packaging>
 
 <build>
+#   <directory>/var/jenkins_home/builds</directory>
    <finalName>simple</finalName>
     <plugins>
         <plugin>
