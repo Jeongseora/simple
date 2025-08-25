@@ -32,9 +32,9 @@ jobs:
     - name: Copy WAR to server
       uses: appleboy/scp-action@v0.1.7
       with:
-        host: ${{ secrets.SERVER_HOST }}
-        username: ${{ secrets.SERVER_USER }}
-        password: ${{ secrets.SERVER_PASSWORD }}
+        host: 10.65.41.162
+        username: root
+        password: rplinux
         source: "target/*.war"
         target: "/tomcat/tomcat9/domains/deploy/webapps/"
 
